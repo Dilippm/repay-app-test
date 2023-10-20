@@ -12,7 +12,7 @@ export default function LineDemo({ inputValue, monthlyBalance }) {
     const surfaceBorder = documentStyle.getPropertyValue('--surface-border');
 
     const numMonths = Math.ceil(monthlyBalance / inputValue);
-    const labels = Array.from({ length: numMonths + 1 }, (_, i) => i); // Adjusted to include the final month
+    const labels = Array.from({ length: numMonths + 1 }, (_, i) => i); 
 
     const dataValues = labels.map((_, i) => {
       const value = monthlyBalance - (inputValue * i);
@@ -33,6 +33,7 @@ export default function LineDemo({ inputValue, monthlyBalance }) {
     };
 
     const options = {
+      responsive: true,
       maintainAspectRatio: false,
       aspectRatio: 0.6,
       plugins: {

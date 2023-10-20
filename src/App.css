@@ -4,39 +4,57 @@
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-
-  
 }
 .divider {
-  border-left: 1px solid #ccc; 
+  border-left: 1px solid #ccc;
   margin: 0 10px;
   height: 100%;
 }
 
-.contianer{
-
-
+.container {
   width: 95vw;
   height: 100vh;
   display: flex;
-  
-
 }
-.Accounts{
+.Accounts {
   width: 25%;
   height: 100%;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
-.Balance{
+.Balance {
   width: 75%;
   height: 100%;
- 
+
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+  .divider {
+    display: none;
+  }
+  .Accounts,
+  .Balance {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Accounts,
+  .Balance {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
