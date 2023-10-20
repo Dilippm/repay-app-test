@@ -1,0 +1,44 @@
+.accounts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  
+}
+.showBalance{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    width: 100%;
+
+}
+.showBalance > input{
+  
+    width: 60%;
+    height: 40px;
+    outline: none;
+ 
+}
+button{
+  width: 100px;
+  height: 30px;
+  background-color: green;
+  color: white;
+  margin: 30px;
+}
+.list{
+    width: 100%;
+
+    display: flex;
+
+}
+.list >ul{
+    list-style-type: none;
+}
+.list >ul >li{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
